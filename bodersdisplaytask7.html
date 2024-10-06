@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css class</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+*{
+  margin: 0%;
+  box-sizing: border-box;
+}
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+
+}
+/* this is by using Descendant Selector() */
+.div1 p{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  color: aliceblue;
+  border: 10px solid red;
+  padding: 30px;
+  margin: 10px;
+
+}
+/* this is by using Child Selector (>) */
+.div2>p{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: darkgreen;
+  background-clip: content-box;
+  color: lemonchiffon;
+  border: 10px dotted red;
+  padding: 30px;
+  margin: 10px;
+
+}
+/* this is by using Adjacent Sibling Selector (+) */
+.div3+p{
+  font-family: 'Courier New', Courier, monospace;
+  border: 20px double pink;
+  padding: 30px;
+  margin: 10px;
+}
+/* this is by using The general sibling selector (~) */
+.div4~p{
+  font-family: 'Courier New', Courier, monospace;
+  border: 14px groove lightblue;
+  padding: 30px;
+  margin: 10px;
+  background-color: aqua;
+  border-radius: 30PX;
+}
+section{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 11px inset black;
+  padding: 30px;
+  margin: 10px;
+  background-color: brown;
+  background-clip: padding-box;
+}
+.div3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: chartreuse;
+  padding: 20PX;
+
+}
+.div4{
+  border-top: 10PX;
+  border-bottom: 15PX;
+  border-style: outset;
+  border-color: coral;
+  padding: 20PX;
+  background-color: cornsilk;
+  background-clip: content-box;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Diff Kinds of Applications Paragraph</h1>
+    <div class="div1">
+        <p>Database Apps: These programs manage and share information efficiently among multiple users. Businesses
+            commonly use them for tasks like creating mailing lists, managing customer contacts, and analyzing
+            transaction records</p>
+    </div>
+    <div class="div2">
+        <p>Custom Apps: Tailored for specific user groups within an organization, custom apps help accomplish specific
+            tasks. They ensure a personalized experience for each team or team member</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus inventore doloribus ea optio
+                eveniet quia sunt corporis aliquam, velit animi possimus quasi aut quos? Voluptatem magni quo sunt
+                aperiam?</p>
+        </section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque fugiat saepe laboriosam asperiores fugit
+            laudantium nihil doloribus. Explicabo blanditiis hic amet, inventore asperiores fugiat, laudantium, veniam
+            autem sint quisquam et.</p>
+    </div>
+    <div class="div3">
+        <p>Web-Based Apps: These run in web browsers and provide access to online services. Examples include email
+            programs, word processors, and image editors</p>
+    </div>
+    <p>Low Code Apps: Designed for rapid development, these apps use visual interfaces and minimal coding. They’re
+        ideal for creating simple applications quickly</p>
+    <div class="div4">
+        <p>No Code Apps: Even simpler than low code apps, these require no coding at all. They’re great for
+            non-technical users who want to build basic applications</p>
+    </div>
+    <p>No Code Apps: Even simpler than low code apps, these require no coding at all. They’re great for
+        non-technical users who want to build basic applications</p>
+    <p>No Code Apps: Even simpler than low code apps, these require no coding at all. They’re great for
+        non-technical users who want to build basic applications</p>
+
+</body>
+
+</html>
